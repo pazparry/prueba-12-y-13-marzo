@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="41C654EE-76D7-01F3-5F8E-DE6CFD4E1569" name="TEST">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:36:24 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TEST" id="2279012F-BD20-8E8B-CE61-B62B3A885AC0">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:37:34 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="7B56E5BB-9F27-5FB0-C267-8DE674CE5D87">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:38:04 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="36FCDE35-5CF8-4927-86F6-CBDA2B799255">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:38:38 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>140 CHAR</dataTypeSize>
+<ownDataTypeParameters>140 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROGRAMA" id="39876F1C-A591-2088-559F-869667E7989C">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:38:52 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIDAD" id="4272FBF7-43E9-F928-6E64-FA22AB045866">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:40:11 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AUTOR" id="2CE74AA8-D1AE-E87F-5072-AEACEC1EC584">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:40:39 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F_CREACION" id="D81D8FA0-BAE7-5875-4736-D2713FD9AF72">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:41:00 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_CURSO" id="B60CBCA5-8A35-975F-714D-36B5E59B723F">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:47:21 UTC</createdTime>
+<generatorID>960A7953-0A7B-8678-1A02-29F90D7EAAE6</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<referedAttribute>825D280D-0AFE-F11D-98D3-9CA4489C2B4F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0A7AD7B9-7756-3CD0-5D8B-2B4217A7B77A" name="TEST PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 20:38:01 UTC</createdTime>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<engineerTo>
+<item key="A3D03229-E6ED-1C10-0C2F-8675CD524886" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2279012F-BD20-8E8B-CE61-B62B3A885AC0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78B2270C-52FB-EBC8-D6F7-3B12ED0FAC47" name="TEST">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>41C654EE-76D7-01F3-5F8E-DE6CFD4E1569</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TEST" id="C7E6356F-BCE5-DDE3-D87E-6E82A38F0CB5">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>2279012F-BD20-8E8B-CE61-B62B3A885AC0</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="B2091D3D-ECD5-CADF-A215-49421A655206">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>7B56E5BB-9F27-5FB0-C267-8DE674CE5D87</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="E3EACEB3-BCEA-6F3D-475F-FF7596C00F0C">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>36FCDE35-5CF8-4927-86F6-CBDA2B799255</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>140 CHAR</dataTypeSize>
+<ownDataTypeParameters>140 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROGRAMA" id="E912805A-E82B-B250-FA23-86FC7AF09940">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>39876F1C-A591-2088-559F-869667E7989C</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIDAD" id="09718D31-E5FD-7F07-373B-CF3016B5DEED">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>4272FBF7-43E9-F928-6E64-FA22AB045866</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTOR" id="CC1101C8-0C9F-8E6D-51B7-110952E3F36C">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>2CE74AA8-D1AE-E87F-5072-AEACEC1EC584</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F_CREACION" id="FCBA4D6D-4007-F3BC-C9E7-0C5942FD36D0">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>D81D8FA0-BAE7-5875-4736-D2713FD9AF72</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURSO_ID_CURSO" id="4DE9E4EF-EF20-9D33-1D46-D1277146CE30">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:49:11 UTC</createdTime>
+<generatorID>B60CBCA5-8A35-975F-714D-36B5E59B723F</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="641239EB-F70D-2C41-4D7F-0E681FEB0C35" referredColumn="4087E9FC-EDDB-9DA0-333F-0A295D6C7C33"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5960D56E-87C8-973E-8EC3-DB48C86CB676" name="TEST_PK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:42:54 UTC</createdTime>
+<generatorID>0A7AD7B9-7756-3CD0-5D8B-2B4217A7B77A</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7E6356F-BCE5-DDE3-D87E-6E82A38F0CB5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E600226-A2ED-B619-85BD-7E4A15147171" name="TEST_CURSO_FK">
+<createdBy>Alumno</createdBy>
+<createdTime>2020-03-12 22:49:11 UTC</createdTime>
+<generatorID>960A7953-0A7B-8678-1A02-29F90D7EAAE6</generatorID>
+<ownerDesignName>modelo_logico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DE9E4EF-EF20-9D33-1D46-D1277146CE30"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

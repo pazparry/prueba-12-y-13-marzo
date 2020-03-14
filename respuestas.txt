@@ -1,0 +1,185 @@
+//Ingresar cursos
+insert INTO curso (id_curso, nombre_curso)
+values('1', 'JAVA');
+insert INTO curso (id_curso, nombre_curso)
+values('2', 'HTML');
+
+//Ingresar estudiantes
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('15841226-8', 'Paz', 'Parry','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('18754122-8', 'Carolina', 'Andrade','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('18754982-8', 'Mauricio', 'Contraras','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('18712122-8', 'Felipe', 'Riquelme','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('18750982-8', 'Ivan', 'Pino','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('10030982-8', 'Eduardo', 'Ramirez','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('10030222-8', 'Javiera', 'Sanchez','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('19814982-8', 'Karina', 'Briones','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('18921982-8', 'Rommie', 'Slayer','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('1992282-8', 'Mario', 'Castro','1');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('98098809-8', 'Javiera', 'Rodriguez','2');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('89789098-8', 'Myriam', 'Olivos','2');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('78909089-8', 'Claudia', 'Mobarec','2');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('8934318-8', 'Galo', 'Jara','2');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('7643210-8', 'Valentina', 'Gomez','2');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('21258763-8', 'Bernardita', 'Carvallo','2');
+insert INTO estudiantes (rut_student, nombre_st, apellido, curso_id_curso)
+values('21611134-8', 'Ricardo', 'Toesca','2');
+
+//Creando test
+INSERT INTO test (id_test, nombre, descripcion, programa, unidad, autor, f_creacion, curso_id_curso)
+VALUES('1', 'Prueba BBDD', 'Gestionar base de datos', 'Oracle SQL Developer',
+'BBDD Oracle', 'Felipe R.', '12-03-2020','1');
+INSERT INTO test (id_test, nombre, descripcion, programa, unidad, autor, f_creacion, curso_id_curso)
+VALUES('3', 'Prueba CSS', 'Crear Casacada Estilo', 'Adobe', 'CSS', 'Camila F.', '12-01-2020', '2');
+
+//Creando preguntas para la prueba BBDD
+insert INTO preguntas(id_pregunta, test_id_test, test_id_curso, enunciado, puntaje)
+values ('1', '1', '1', '¿Cuáles son los fundamentos de consultas simples de datos con SELECT?', '10');
+insert INTO preguntas(id_pregunta, test_id_test, test_id_curso, enunciado, puntaje)
+values ('2', '1', '1', 'La sentencia ORDER BY sirve para', 10);
+
+//Creando preguntas para la prueba CSS
+insert INTO preguntas(id_pregunta, test_id_test, test_id_curso, enunciado, puntaje)
+values ('3', '1', '2', '¡Que significa WWW', '10');
+insert INTO preguntas(id_pregunta, test_id_test, test_id_curso, enunciado, puntaje)
+values ('4', '1', '2', 'En la siguiente línea: <h2 id="htmllooks">Aspecto del HTML </h2> es o son correctas', 10);
+
+//Creando preguntas para la prueba CSS2
+insert INTO preguntas(id_pregunta, test_id_test, test_id_curso, enunciado, puntaje)
+values ('5', '2', '2', 'Verdadero o Falso: Las hojas de estilo constan de una serie de instrucciones que definen cómo se han
+de representar determinados elementos de página con etiquetas HTML', '10');
+insert INTO preguntas(id_pregunta, test_id_test, test_id_curso, enunciado, puntaje)
+values ('6', '2', '2', 'Verdadero o Falso: Una hoja de estilo puede referenciar URLs o vínculos a otros archivos, casi siempre
+se trata de imágenes que se vinculan como fondo o tipografías.', 10);
+
+
+
+//Crar alternativas para pregunta 1 del test de BBSS, curso 1
+1. Muestra información sobre los datos almacenados en la base de datos.
+2. La información mostrada puede pertenecer a una o varias tablas
+3. Actualiza información de una tabla
+4. Actualiza datos, borrando los antiguos
+5. Borra filas de una tabla
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('1', 'Muestra información sobre los datos almacenados en la base de datos.', '1','5', '1', '1', '1');
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('2', 'La información mostrada puede pertenecer a una o varias tablas', '1', '5', '1', '1', '1');
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('3', 'Actualiza información de una tabla', '0', '0', '1', '1', '1');
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('4', 'Actualiza datos, borrando los antiguos', '0', '0', '1', '1', '1');
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('5', 'Borra filas de una tabla', '0', '0', '1', '1', '1');
+
+//Creando alternativas para la pregunta 2 del test 1, del curso 1
+1. Nos sirve para ordenar de forma descendente datos del tipo INTERGER
+2. Nos sirve para ordenar de forma ascendente datos del tipo INTERGER
+3. Nos sirve para ordenar datos de forma ascendente
+4. Nos sirve para ordenar datos de forma descendente
+5. Sólo sirve para ordenar cadenas tipo VARCHAR
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('1', 'Nos sirve para ordenar de forma descendente datos del tipo INTERGER', '0','0', '2', '1', '1');
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('2', 'Nos sirve para ordenar de forma ascendente datos del tipo INTERGER', '0','0', '2', '1', '1');
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('3', 'Nos sirve para ordenar datos de forma ascendente', '1','5', '2', '1', '1');
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('4', 'Nos sirve para ordenar datos de forma descendente', '1','5', '2', '1', '1');
+insert INTO alternativas(id_aletrnativa, descripcion, v_f, porcentaje, preguntas_id_pregunta, preguntas_test_id_test, preguntas_test_id_curso)
+values ('5', 'Sólo sirve para ordenar cadenas tipo VARCHAR', '0','0', '2', '1', '1');
+
+
+
+//Creando alternativas para la pregunta 2 del test 1, del curso 1
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('11', 'Enumerar el resultado en un orden particular.', '1', '5', '2', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('12', 'Se puede ordenar en forma ascendente y descendente', '1', '5', '2', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('13', 'Limitar el criterio de selección para uno o más valores', '0', '0', '2', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('14', 'Para realizar uniones en SQL', '0', '0', '2', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('15', 'Pueden seleccionarse los nombres de columnas múltiples', '0', '0', '2', '1', '1')
+
+//Creando alternativas para la pregunta 3 del test 1, del curso 1
+
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('8', 'Guarda datos UNICODE', '0', '0', '3', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('9', 'Conversión explicita de un tipo de dato a otro tipo.', '0', '0', '3', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('10', 'Texto explicatorio que es ignorado por el compilador', '0', '0', '3', '1', '1')
+
+//Creando alternativas para la pregunta 4 del test 1, del curso 1
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('16', 'Una cláusula usada para declarar un bucle que iterara un block de sentencias.', '1', '5', '4', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('17', 'En la especificación del lenguaje de programación Java', '0', '0', '4', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('18', 'Una cláusula usada para definir una variable del tipo double.', '0', '0', '4', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('19', 'Para salir de este bucle se debe usar while', '1', '5', '4', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('20', 'Un árbol de objetos con interfaces', '0', '0', '4', '1', '1')
+
+
+//Creando alternativas para la pregunta 5 del test 1, del curso 1
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('20', 'Código independiente de la maquina generado por el compilador Java', '0', '0', '5', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('21', 'Refiere a una expresión o variable que puede tener solo un valor falso o positivo', '0', '0', '5', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('22', 'Una secuencia de ocho bits. Java provee de un tipo correspondiente a un byte.', '1', '5', '5', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('23', 'En Java, cualquier código entre las llaves, ejemplo: { x = 1; }.', '0', '0', '5', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('24', 'Java provee de un tipo correspondiente a un byte.', '1', '5', '5', '1', '1')
+
+//Creando alternativas para la pregunta 6 del test 1, del curso 1
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('26', 'El punto en una transacción cuando todas las actualizaciones de los recursos involucrados en una transacción son hechos permanentes.', '1', '10', '6', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('27', 'Programa que traslada el código fuente en código que será ejecutado por la computadora', '0', '0', '6', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('28', 'El proceso de superponer una imagen sobre otra creando una sola imagen.', '0', '0', '6', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('29', 'Un valor que es invocado sin una referencia a un objeto en particular', '0', '0', '6', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('30', 'En el lenguaje de programación Java', '0', '0', '6', '1', '1')
+
+
+//Creando alternativas para la pregunta 7 del test 1, del curso 1
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('31', 'Un dato especificado en una llamada a un método', '0', '0', '7', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('32', 'Refiere a una operación que nunca es interrumpida o dejada en estado incompleto bajo ninguna circunstancia.', '0', '0', '7', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('33', 'Una colección de elementos del mismo tipo, en la cual cada uno tiene una posición única designada por un entero.', '1', '10', '7', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('34', 'Los argumentos especificados en la llamada a un método.', '0', '0', '7', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('35', 'Los métodos por los cuales las interacciones con los recursos son limitadas entre ciertos usuarios o programas', '0', '0', '7', '1', '1')
+
+//Creando alternativas para la pregunta 8 del test 1, del curso 1
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('36', 'Una cláusula que permite resumir la ejecución de un programa siguiendo en la siguiente declaración.', '0', '0', '8', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('37', 'Acrónimo para las cuatro propiedades garantizadas por las transacciones: atomicidad, consistencia, aislamiento, durabilidad.', '0', '0', '8', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('38', 'Refiere a una expresión o variable que puede tener solo un valor falso o positivo. Java provee el tipo booleano y los valores literales true y false.', '1', '10', '8', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('39', 'Una cláusula que permite declarar una clase que no podrá ser instanciada pero si podrá ser heredada por otras clases.', '0', '0', '8', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('40', 'Un método que no tiene implementación, y por lo tanto no tiene cuerpo.', '0', '0', '8', '1', '1')
+
+//Creando alternativas para la pregunta 9 del test 1, del curso 1
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('41', 'Conversión explicita de un tipo de dato a otro tipo.', '0', '0', '9', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('42', 'Una cláusula para declarar una variable del tipo character.', '0', '0', '9', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('43', 'Una cláusula que define cuando un grupo de sentencias se van a ejecutar si un valor especificado es igual al definido en una cláusula de switch precedente.', '1', '10', '9', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('44', 'La unidad mas pequeña de código fuente que puede ser compilada.', '0', '0', '9', '1', '1')
+INSERT INTO "AGRO"."ALTERNATIVAS" (ID_ALETRNATIVA, DESCRIPCION, V_F, PORCENTAJE, PREGUNTAS_ID_PREGUNTA, PREGUNTAS_TEST_ID_TEST, PREGUNTAS_TEST_ID_CURSO) VALUES ('45', 'Una clausula reservada no usada todavía por las implementaciones actuales del lenguaje Java.', '0', '0', '9', '1', '1')
+
+
+//////////////////////////////////////////////////////////////////
+PREGUNTAS
+
+1. Conocer el número de evaluaciones por curso.
+SELECT count(*)from test;
+
+2. Conocer los cursos sin evaluaciones
+SELECT count(curso_id_curso)from test;
+
+3. Determinar las evaluaciones con deficiencia. Una evaluación es deficiente:
+a.Si no tiene preguntas.
+SELECT COUNT(*) FROM preguntas
+WHERE (enunciado) IS NULL;
+b.Si hay preguntas con 2ó menos alternativas
+PASO
+c.Si todas las alternativas son correctas o si todas las alternativas son incorrectas
+No más por hoy, de verdad.
+
+4. Determinar cuántos alumnos hay en cada curso.
+SELECT COUNT(Nombre_st) FROM estudiantes; (cuenat el total de todo los alumnos)
